@@ -3,48 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive First Task</title>
+    <title>Adapt images for different devices</title>
     <style>
-        .container{
-            display: grid;
-            grid-template-columns: repeat(1, 1fr) 3fr;
-            border: 2px solid skyblue;
-            gap: 10px;
-            
-        }
-        .left{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: darkgrey;
-            width: 30vw;
-            height: 100vh;
-            border-radius: 5px;
-            
-        }
-        .right{
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            background-color: antiquewhite;
-            width: 70vw;
-            height: 100vh;
-            border-radius: 5px;
-        }
-        .container div{
+        .image-container img{
             width: 100%;
         }
         @media screen and (max-width: 576px) {
-            .container{
-                flex-direction: column;
+            .image-container img{
+                width: 40%;
+                height: 50%;
+
             }
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <div class="left">Left</div>
-        <div class="right">Right</div>
+    <div class="image-container">
+        <img src="img/man.jfif" alt="">
     </div>
 </body>
 </html>

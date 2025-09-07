@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive First Task</title>
+    <style>
+        .container{
+            display: grid;
+            grid-template-columns: repeat(1, 1fr) 3fr;
+            border: 2px solid skyblue;
+            gap: 10px;
+            
+        }
+        .left{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: darkgrey;
+            height: 100vh;
+            border-radius: 5px;
+            
+        }
+        .right{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: antiquewhite;
+            width: 70vw;
+            height: 100vh;
+            border-radius: 5px;
+        }
+        .container div{
+            width: 100%;
+        }
+        @media screen and (max-width: 576px) {
+            .container{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="left">Left</div>
+        <div class="right">Right</div>
+    </div>
+</body>
+</html>
