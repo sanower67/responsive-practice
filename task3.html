@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Design responsive layout 2</title>
+    <style>
+        .img-text-container{
+            display: grid;
+            grid-template-columns: 1fr 3fr;
+            gap: 10px;
+          
+        }
+        .btn{
+            background-color: blue;
+            color: white;
+        }
+        .img-text-container2{
+            display: grid;
+            grid-template-columns:  1fr 3fr;
+        }
+        .imag2 img{
+            width: 82%;
+        }
+        @media screen and (max-width: 576px) {
+            .img-text-container{
+                display: flex;
+                flex-direction: column;
+            }
+            .img-text-container2{
+                display: flex;
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="img-text-container">
+        <div class="img-1"><img src="img/food1.jfif" alt=""></div>
+        <div class="text">
+            <h3>Post Title Will Be Here</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam atque dolorum enim ab voluptatibus id quasi iste adipisci sint.Lorem ipsum dolor sit amet consectetur adipisicing elit. At nam atque dolorum enim ab voluptatibus id quasi iste adipisci sint.
+            </p>
+            <button class="btn">Read More</button>
+        </div>
+    </div>
+    <div class="img-text-container2">
+        <div class="imag2"><img src="img/food2.webp" alt=""></div>
+        <div class="text2">
+            <h3>Post Title Will Be Here</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ea pariatur laudantium officiis distinctio dolores temporibus nemo sit fugit, reprehenderit ad voluptatibus earum rerum at cupiditate ex molestias culpa exercitationem .</p>
+            <button class="btn">Read More</button>
+        </div>
+    </div>
+</body>
+</html>
